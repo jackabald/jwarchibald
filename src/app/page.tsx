@@ -7,8 +7,8 @@ export default function Page() {
       <Hero />
 
       <section className="prose prose-lg mb-12">
-        <p>Hi there!</p>
-        <p>
+        <p className='mb-6'>Hi there!</p>
+        <p className='mb-6'>
           I&apos;m Jack Archibald.  I&apos;m currently a software engineering intern at GE HealthCare, where I work with 
           backend microservices for medical resonance imaging (MRI) platforms using Spring Boot, Gradle, and Jenkins.
         </p>
@@ -21,13 +21,13 @@ export default function Page() {
       <h2 className="text-xl font-semibold mb-4">Here are some things I&apos;ve done:</h2>
       <ul className="space-y-2">
         <li>
-          <Link href="/" className="text-primary hover:underline">
-            Placeholder<span className="text-dark/60"> — May 17, 2024</span>
+          <Link href="/gehc" className="text-primary hover:underline">
+            Magnetic Resonance Imagining (MRI)<span className="text-dark/60"> — (October 2024 - August 2025)</span>
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-primary hover:underline">
-            Placeholder<span className="text-dark/60"> — May 31, 2023</span>
+          <Link href="/doit" className="text-primary hover:underline">
+            DoIT Technologist<span className="text-dark/60"> — (September 2022 - September 2024)</span>
           </Link>
         </li>
       </ul>
