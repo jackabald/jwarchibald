@@ -5,7 +5,9 @@ export function Hero() {
   return (
     <header className="flex items-center space-x-6 mb-12">
       <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border border-light">
-        <Image src="/avatar.png" alt="Jack Archibald" width={96} height={96} />
+        {/* ligh-mode and dark-mode avatars */}
+        <Image src="/avatar-lm.png" alt="Jack Archibald" width={96} height={96} className='block dark:hidden' />
+        <Image src="/avatar-dm.png" alt="Jack Archibald" width={96} height={96} className='hidden dark:block' />
       </div>
       <div>
         <h1 className="text-2xl font-bold">Jack Archibald</h1>
