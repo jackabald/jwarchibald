@@ -22,7 +22,7 @@ export default function Page() {
       <ul className="space-y-2">
         <li>
           <Link href="/gehc" className="text-primary hover:underline">
-            Magnetic Resonance Imagining (MRI)<span className="text-dark/60"> — (October 2024 - August 2025)</span>
+            Magnetic Resonance Imaging (MRI)<span className="text-dark/60"> — (October 2024 - August 2025)</span>
           </Link>
         </li>
         <li>
