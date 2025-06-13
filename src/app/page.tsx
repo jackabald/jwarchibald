@@ -18,7 +18,7 @@ export default function Page() {
         </p>
       </section>
 
-      <h2 className="text-xl font-semibold mb-4">Here are some things I&apos;ve done:</h2>
+      <h2 className="text-xl font-semibold mb-4">More About My Experience:</h2>
       <ul className="space-y-2">
         <li>
           <Link href="/gehc" className="text-primary hover:underline">
