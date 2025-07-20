@@ -22,20 +22,20 @@ export default function Page() {
       <ul className="space-y-2">
         <li>
           <Link href="/NuancedNews" className="text-primary hover:underline">
-            NuancedNews<span className="text-dark/60"> — All your news in one place.</span>
+            NuancedNews<span className="text-dark/60"> · All your news in one place.</span>
           </Link>
         </li>
         <br/>
         <li>
           <Link href="/TiDB-hack" className="text-primary hover:underline">
-            Semantic Search for Github Repos<span className="text-dark/60"> — RAG-based model to query codebases and 
+            Chat Engine for Github Repositories<span className="text-dark/60"> · RAG-based model to query codebases and 
             extract insights about project structure, dependencies, and functionality.</span>
           </Link>
         </li>
         <br/>
          <li>
           <Link href="/BionicReader" className="text-primary hover:underline">
-            Bionic Reader Extension<span className="text-dark/60">— Enhances reading speed and focus by bolding key parts 
+            Bionic Reading Browser Extension<span className="text-dark/60"> · Enhances reading speed and focus by bolding key parts 
             of words on any webpage.</span>
           </Link>
         </li>
