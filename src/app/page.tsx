@@ -21,13 +21,22 @@ export default function Page() {
       <h2 className="text-xl font-semibold mb-4">More About My Experience:</h2>
       <ul className="space-y-2">
         <li>
-          <Link href="/gehc" className="text-primary hover:underline">
-            Magnetic Resonance Imaging (MRI)<span className="text-dark/60"> — (October 2024 - August 2025)</span>
+          <Link href="/NuancedNews" className="text-primary hover:underline">
+            NuancedNews<span className="text-dark/60"> — All your news in one place.</span>
           </Link>
         </li>
+        <br/>
         <li>
-          <Link href="/doit" className="text-primary hover:underline">
-            DoIT Technologist<span className="text-dark/60"> — (September 2022 - September 2024)</span>
+          <Link href="/TiDB-hack" className="text-primary hover:underline">
+            Semantic Search for Github Repos<span className="text-dark/60"> — RAG-based model to query codebases and 
+            extract insights about project structure, dependencies, and functionality.</span>
+          </Link>
+        </li>
+        <br/>
+         <li>
+          <Link href="/BionicReader" className="text-primary hover:underline">
+            Bionic Reader Extension<span className="text-dark/60">— Enhances reading speed and focus by bolding key parts 
+            of words on any webpage.</span>
           </Link>
         </li>
       </ul>
