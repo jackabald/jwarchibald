@@ -18,8 +18,9 @@ export default function Page() {
         </p>
       </section>
 
-      <h2 className="text-xl font-semibold mb-4">More About My Experience:</h2>
+      <h2 className="text-xl font-semibold mb-4">Projects:</h2>
       <ul className="space-y-2">
+      <br />
         <li>
           <Link href="/NuancedNews" className="text-primary hover:underline">
             NuancedNews<span className="text-dark/60"> · All your news in one place.</span>
