@@ -1,11 +1,12 @@
-export default function PlaceholderPage() {
+export default function NuancedNews() {
   return (
     <div className="prose prose-lg p-6 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Project Title</h1>
-      <p className="text-sm text-muted-foreground mb-8">Month YYYY – Month YYYY</p>
+      <h1 className="text-3xl font-bold mb-4">Nuanced News</h1>
 
       <p>
-        Brief introduction or summary of the project. Explain what the project is, its purpose, and a one-liner impact.
+        Large news publications post their .rss files, which are XML files that contain the latest news articles from the publication. 
+        The Nuanced News app fetches these .rss files from various sources, parses the XML to extract article information, and categorizes 
+        the articles based on their source.
       </p>
 
       <video
@@ -21,22 +22,25 @@ export default function PlaceholderPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Technologies Used</h2>
       <ul>
-        <li>Java</li>
-        <li>SQL</li>
-        <li>Spring Boot</li>
+        <li>React</li>
+        <li>Vite</li>
+        <li>Python</li>
+        <li>Firebase</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4">What I Did</h2>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">About</h2>
       <p>
-        A paragraph or two describing your responsibilities, challenges you overcame, and what you learned.
-      </p>
+        Nuanced News is an open-source web application that aggregates news stories from a wide range of sources across the political spectrum. 
+        Instead of categorizing articles directly, it presents stories from publications with known political leanings, allowing readers to compare 
+        coverage and develop a more informed and balanced understanding of current events. The goal is to encourage thoughtful reading by 
+        highlighting how narratives differ across media outlets.
+        <br />
+        <br />
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Key Takeaways</h2>
-      <ul>
-        <li>Improved backend performance by X%</li>
-        <li>Learned to work in a cross-functional team</li>
-        <li>Gained experience with real-world data pipelines</li>
-      </ul>
+        The project features a React frontend, a Flask backend, and Firebase authentication. It fetches and parses RSS feeds in real time, 
+        delivering up-to-date headlines and summaries with a clean, responsive interface. Nuanced News is actively maintained and open to 
+        contributors. Stars and PRs appreciated!
+      </p>
     </div>
   );
 }
