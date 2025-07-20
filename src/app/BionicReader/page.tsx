@@ -33,7 +33,7 @@ export default function BionicReader() {
       <p>
         When I first built this project in 2023, Bionic Reading—a technique that emphasizes the beginning of words to guide the eyes—was primarily 
         supported by anecdotal evidence and user testimonials. The core idea was that highlighting the first few letters of a word would let readers 
-        "complete" it subconsciously, improving reading speed and focus, especially for neurodivergent readers (e.g., those with ADHD or dyslexia).
+        “complete“ it subconsciously, improving reading speed and focus, especially for neurodivergent readers (e.g., those with ADHD or dyslexia).
           <br />
           <br />
           Since then, the scientific understanding of Bionic Reading has started to mature:

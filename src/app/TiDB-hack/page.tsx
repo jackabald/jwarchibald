@@ -35,7 +35,7 @@ export default function TiDBHack() {
         During the 2024 TiDB Hackathon, I built a semantic search engine that lets developers search code repositories using natural language. 
         The goal was to make code discovery as intuitive as a Google search—queries like “function that performs quicksort” return precise file paths, 
         line numbers, and code snippets using vector embeddings and large language models (LLMs). The project leverages TiDB Serverless with Vector 
-        Search, Ollama for local LLM integration, and GitHub's API to retrieve and index real-world repositories. This tool helps reduce redundancy 
+        Search, Ollama for local LLM integration, and GitHub&apos;s API to retrieve and index real-world repositories. This tool helps reduce redundancy 
         in development by making code reuse effortless and intelligent.
       </p>
     </div>
