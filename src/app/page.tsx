@@ -18,6 +18,7 @@ export default function Page() {
         </p>
       </section>
 
+      <br />
       <h2 className="text-xl font-semibold mb-4">Projects:</h2>
       <ul className="space-y-2">
       <br />
