@@ -11,7 +11,7 @@ export function Hero() {
       </div>
       <div>
         <h1 className="text-2xl font-bold">Jack Archibald</h1>
-        <p className="text-sm text-dark/70">Software Engineer</p>
+        <p className="text-sm text-dark/70">Software Engineer at RxBenefits</p>
         <div className="flex space-x-4 mt-2">
           <a href="https://www.linkedin.com/in/jack-archibald/" className="hover:text-primary">
             <Linkedin />
