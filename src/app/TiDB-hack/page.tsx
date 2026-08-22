@@ -1,15 +1,20 @@
 export default function TiDBHack() {
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-4">Chat Engine for GitHub Repositories</h1>
-      <div className="prose prose-lg">
+      <h1 className="text-3xl font-bold mb-2">Semantic Code Search</h1>
+      <a
+        href="https://github.com/jackabald/TiDB-Hack-NL-repo-search"
+        className="text-sm text-primary hover:underline"
+      >
+        github.com/jackabald/TiDB-Hack-NL-repo-search
+      </a>
 
-
+      <div className="prose prose-lg mt-8">
         <p>
-          The Semantic Search Engine for Code Repositories is an AI-powered tool designed to help developers find relevant code snippets, 
-          functions, or entire libraries based on natural language queries. By leveraging advanced NLP techniques, large language models (LLMs), 
-          and TiDB Serverless with Vector Search, this tool allows users to efficiently locate specific code patterns, structures, or algorithms 
-          within a codebase.
+          Built at the 2024 TiDB AI Hackathon. The idea was to make code discovery work like a search
+          engine rather than a grep — a query like &ldquo;function that performs quicksort&rdquo;
+          returns the file path, line numbers, and surrounding snippet, across a repository the tool
+          has never seen before.
         </p>
 
         <video
@@ -23,22 +28,21 @@ export default function TiDBHack() {
           Your browser does not support the video tag.
         </video>
 
-
         <h2 className="text-2xl font-semibold mt-10 mb-4">Technologies Used</h2>
         <ul className="list-disc pl-6">
           <li>Python</li>
-          <li>Ollama</li>
-          <li>Jina AI</li>
-          <li>TiDB Serverless</li>
+          <li>JinaAI (embeddings)</li>
+          <li>TiDB Serverless with Vector Search</li>
+          <li>Ollama (local LLM runner)</li>
+          <li>LlamaIndex (context retrieval)</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-4">About</h2>
+        <h2 className="text-2xl font-semibold mt-10 mb-4">How it works</h2>
         <p>
-          During the 2024 TiDB Hackathon, I built a semantic search engine that lets developers search code repositories using natural language. 
-          The goal was to make code discovery as intuitive as a Google search—queries like “function that performs quicksort” return precise file paths, 
-          line numbers, and code snippets using vector embeddings and large language models (LLMs). The project leverages TiDB Serverless with Vector 
-          Search, Ollama for local LLM integration, and GitHub&apos;s API to retrieve and index real-world repositories. This tool helps reduce redundancy 
-          in development by making code reuse effortless and intelligent.
+          Repositories are pulled through GitHub&apos;s API and chunked, then embedded with JinaAI and
+          stored as vector representations in TiDB Vector Store. At query time, LlamaIndex handles
+          retrieval against those embeddings and Ollama runs the model locally to turn the retrieved
+          context into an answer — so the index lives in TiDB while inference stays on the machine.
         </p>
       </div>
     </div>

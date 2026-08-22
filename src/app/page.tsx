@@ -1,47 +1,51 @@
-import Link from 'next/link'
 import { Hero } from '@/components/Hero'
+
+const experience = [
+  {
+    company: 'RxBenefits',
+    role: 'Software Engineer',
+    period: '2026 — Present',
+  },
+  {
+    company: 'Cottingham & Butler',
+    role: 'Software Engineer',
+    period: '2025 — 2026',
+  },
+  {
+    company: 'GE HealthCare',
+    role: 'Software Engineer Co-Op',
+    period: '2024 — 2025',
+  },
+]
 
 export default function Page() {
   return (
     <>
       <Hero />
 
-      <section className="prose prose-lg mb-12">
-        <p className='mb-6'>Hi there!</p>
-        <p className='mb-6'>
-          I&apos;m Jack Archibald.  I&apos;m currently a software engineering intern at GE HealthCare, where I work with 
-          backend microservices for medical resonance imaging (MRI) platforms using Spring Boot, Gradle, and Jenkins.
-        </p>
-        <p>
-          Previously, I was a Field Technician at UW-Madison&apos;s Division of IT, where I delivered campus-wide tech support, 
-          imaged and secured workstations, and resolved technical issues through remote system access and diagnostics.
-        </p>
+      <section className="mb-14">
+        <h2 className="text-xl font-semibold mb-6">Experience</h2>
+        <div className="space-y-8">
+          {experience.map((job) => (
+            <div key={job.company}>
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                <h3 className="font-semibold">
+                  {job.company}
+                  <span className="font-normal text-dark/60"> · {job.role}</span>
+                </h3>
+                <p className="text-sm text-dark/60">{job.period}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
-      <br />
-      <h2 className="text-xl font-semibold mb-4">Projects:</h2>
-      <ul className="space-y-2">
-      <br />
-        <li>
-          <Link href="/NuancedNews" className="text-primary hover:underline">
-            NuancedNews<span className="text-dark/60"> · All your news in one place.</span>
-          </Link>
-        </li>
-        <br/>
-        <li>
-          <Link href="/TiDB-hack" className="text-primary hover:underline">
-            Chat Engine for Github Repositories<span className="text-dark/60"> · RAG-based model to query codebases and 
-            extract insights about project structure, dependencies, and functionality.</span>
-          </Link>
-        </li>
-        <br/>
-         <li>
-          <Link href="/BionicReader" className="text-primary hover:underline">
-            Bionic Reading Browser Extension<span className="text-dark/60"> · Enhances reading speed and focus by bolding key parts 
-            of words on any webpage.</span>
-          </Link>
-        </li>
-      </ul>
+      <section>
+        <h2 className="text-xl font-semibold mb-3">Education</h2>
+        <p className="text-dark/80">
+          B.S. Computer Science · University of Wisconsin&ndash;Madison
+        </p>
+      </section>
     </>
   )
 }
